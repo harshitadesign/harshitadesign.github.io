@@ -1,24 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 auto;
+            padding-bottom: 200px;
+        }
+        .header-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            width: 100%;
+        }
+        .image-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+        .image-item {
+            flex: 1 1 auto;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="assets/portfolio.pdf#toolbar=0&navpanes=0&scrollbar=0" frameborder="0">
-    </iframe>
+
+    <div class="container">
+
+        <ul class="header-list">
+            <li class="image-item"><img src="assets/header1.jpg" alt="Image 1"></li>
+            <li class="image-item"><img src="assets/header2.jpg" alt="Image 2"></li>
+            <li class="image-item"><a href="https://www.linkedin.com/in/harshitarathore7/" target="_blank"><img src="assets/header3.jpg" alt="Image 3"></a></li>
+            <li class="image-item"><a href="mailto:harshita.mailme@gmail.com"><img src="assets/header4.jpg" alt="Image 4"></a></li>
+            <li class="image-item"><img src="assets/header5.jpg" alt="Image 5"></li>
+        </ul>
+
+        <ul class="image-list">
+            <li class="image-item"><img src="assets/image1.jpg" alt="Image 1"></li>
+            <li class="image-item"><img src="assets/image2.jpg" alt="Image 2"></li>
+            <li class="image-item"><img src="assets/image3.jpg" alt="Image 3"></li>
+            <li class="image-item"><img src="assets/image4.jpg" alt="Image 4"></li>
+            <li class="image-item"><img src="assets/image5.jpg" alt="Image 5"></li>
+            <li class="image-item"><img src="assets/image6.jpg" alt="Image 6"></li>
+            <li class="image-item"><img src="assets/image7.jpg" alt="Image 7"></li>
+            <li class="image-item"><img src="assets/image8.jpg" alt="Image 8"></li>
+            <li class="image-item"><img src="assets/image9.jpg" alt="Image 9"></li>
+            <li class="image-item"><img src="assets/image10.jpg" alt="Image 10"></li>
+            <li class="image-item"><img src="assets/image11.jpg" alt="Image 11"></li>
+            <li class="image-item"><img src="assets/image12.jpg" alt="Image 12"></li>
+        </ul>
+
+        <ul class="footer-list">
+            <li class="image-item"><img src="assets/footer1.jpg" alt="Image 1"></li>
+            <li class="image-item"><a href="https://www.linkedin.com/in/harshitarathore7/" target="_blank"><img src="assets/footer2.jpg" alt="Image 2"></a></li>
+            <li class="image-item"><a href="mailto:harshita.mailme@gmail.com"><img src="assets/footer3.jpg" alt="Image 3"></a></li>
+            <li class="image-item"><img src="assets/footer4.jpg" alt="Image 4"></li>
+            <li class="image-item"><img src="assets/footer5.jpg" alt="Image 5"></li>
+        </ul>
+
+    </div>
+
 </body>
 </html>
